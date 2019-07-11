@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  NewsFeed
+
+  Created by smallkot on 7/9/19.
+  Copyright © 2019 smallkot. All rights reserved.
+*/
+
+"ok" = "Oк";
+"error" = "Ошибка";
+
+"backend.errors.parse" = "Не удается распарсить ответ сервера.";
+"backend.errors.invalidUrl" = "Неверная ссылка";
+"images.errors.default" = "Не удаеться скачать картинку";
+
+"newsFeedTitle" = "Новости";
+
+"notInternet" = "Нет интернета";
+
+"refreshControlTitle" = "Обновить ленту новостей ...";
