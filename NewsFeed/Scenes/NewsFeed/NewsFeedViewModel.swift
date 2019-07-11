@@ -36,37 +36,6 @@ class NewsFeedViewModel {
         self?.isConnected.onNext(isReachable)
       })
       .disposed(by: disposeBag)
-    
-    
-    Reachability.rx.reachabilityChanged
-      .subscribe(onNext: { reachability in
-        print("Reachability changed: \(reachability.connection)")
-      })
-      .disposed(by: disposeBag)
-    
-    Reachability.rx.status
-      .subscribe(onNext: { status in
-        print("Reachability status changed: \(status)")
-      })
-      .disposed(by: disposeBag)
-    
-    Reachability.rx.isReachable
-      .subscribe(onNext: { isReachable in
-        print("Is reachable: \(isReachable)")
-      })
-      .disposed(by: disposeBag)
-    
-    Reachability.rx.isConnected
-      .subscribe(onNext: {
-        print("Is connected")
-      })
-      .disposed(by: disposeBag)
-    
-    Reachability.rx.isDisconnected
-      .subscribe(onNext: {
-        print("Is disconnected")
-      })
-      .disposed(by: disposeBag)
   }
   
   private func loadArticles() {
